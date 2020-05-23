@@ -40,18 +40,24 @@ Schematischer Aufbau der mit Fritzing realisiert wurde.<br />
 
 # Inbetriebnahme
 
-Konfiguration der Pumpen in der void setup():<br />
-pumpen[n].pinPump = 17; **!Relay-Pin for this Pump!**<br />
-pumpen[n].statePump = INIT_STATE;<br />
-pumpen[n].startTimePump = 0;<br />
-pumpen[n].fillInMlPump = 0;<br />
-pumpen[n].resetErrorStatePump = false;<br />
-pumpen[n].pumpMlPerMin = 500; **!Flow rate in ml/minute for this pump!** <br />
+Konfiguration der Pumpen in der ```void setup():```<br />
+
+```
+pumpen[n].pinPump = 17; //!Relay-Pin for this Pump!
+pumpen[n].statePump = INIT_STATE;
+pumpen[n].startTimePump = 0;
+pumpen[n].fillInMlPump = 0;
+pumpen[n].resetErrorStatePump = false;
+pumpen[n].pumpMlPerMin = 500; //!Flow rate in ml/minute for this pump!
+```
 
 Um eine korrektes Mischverhältnis zu gewehrleisten muss die Durchflussmenge der verwendeten Pumpen gemessen und im Arduino-Code hinterlegt werden. Da die eBay-Pumpen in ihren tatsächlcihen Durchflussmengen nicht immer mit den angegebenen Werten übereinstimmen ist dieser Schritt sehr wichtig.<br />
 <br />
 Über die Konstante kann die Anzahl der Pumpen festgelegt werden die während der Zubereitung gleichzeitig laufen durfen:<br />
-**const int MAX_PUMP_AT_SAME =4;**<br />
+```
+const int MAX_PUMP_AT_SAME =4;
+```
+<br />
 Diese Einstellung ist abhängig von dem verwendeten Netzeil und der Leistungsaufnahme der Pumpen.<br />
 <br />
 Dieser Schritt muss nur einmalig asugeführt werden!
