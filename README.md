@@ -5,6 +5,7 @@ Es handelt sich hier um mein erstes "größeres" Arduino-Projekt was über das b
 Die Idee war eine Maschine zu kreieren die automatisiert Cocktails zubereiten kann.<br />
 Eine Auswahl an verschiedenen Getränken kann über eine Android-App getätigt werden, welche die Daten kabellos per Bluetooth an den MiXXer überträgt. Somit ist eine Bedienung bequem vom Sofa garantiert.<br />
 Es können eigene Rezepte aus den vorhandenen Zutaten erstellt werden und so ganz individuelle Cocktails zubereitet werden.<br />
+Sirup oder dickflüssige Zutaten sollten vermieden werden.<br />
 
 Das Herz von "Der MiXXer" besteht aus einem Arduino Nano der über ein Relay-Shield die "Peristaltic Dosierpumpen"  ansteuert.
 Der ganze Aufbau ist sowohl in der Arduino-Software und in dem "Hardware-Design" leicht skalierbar, dass Der MiXXer einfach mit n-Pumpen erweitert werden kann um eine größere Auswahl an Cocktails zubereiten zukönnen. Die Füllmenge der Zutaten wird über die Laufzeit der Pumpen errechnet. Dies hat den Vorteil, dass keine zusätzliche Hardware notwendig ist die die Durchflussmenge oder das Gewicht des Getränkes misst.
